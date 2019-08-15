@@ -14,7 +14,7 @@ RUN localedef -v -c -i en_US -f UTF-8 zh_CN.UTF-8 >/dev/null 2>&1 &&\
     yum install -y ntp yum-plugin-fastestmirror vim-enhanced ntp wget bash-completion elinks lrzsz unix2dos dos2unix git unzip net-tools cronie sudo tar &&\
     yum install -y rpm-build.x86_64 lua-devel libuv-devel sqlite-devel rpmdevtools mock &&\
     yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel &&\
-    yum -y install https://rpm.nodesource.com/pub_10.x/el/7/x86_64/nodejs-8.11.4-1nodesource.x86_64.rpm &&\
+    yum -y install http://mirrors.xuncetech.com/nodejs-repo/pub_8.x/el/7/x86_64//nodejs-8.11.4-1nodesource.x86_64.rpm &&\
     ##npm install -g cnpm --registry=https://registry.npm.taobao.org &&\
     rpmdev-setuptree &&\
     dos2unix /tmp/resource/*sh && \
